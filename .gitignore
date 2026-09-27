@@ -1,0 +1,22 @@
+# Secrets - never commit your real API tokens
+.env
+
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Optional: uncomment if you don't want collected data / generated charts in the repo
+# data/*.csv
+# *.png

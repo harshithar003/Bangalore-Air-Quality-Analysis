@@ -1,0 +1,7 @@
+requests
+pandas
+schedule
+python-dotenv
+matplotlib
+seaborn
+jupyter
