@@ -1,8 +1,7 @@
 # 🌫️ Bangalore Real-Time Air Quality Analytics
 
 A Bangalore-focused adaptation of the "From Data to Decisions" real-time analytics
-project structure (originally built for Dublin bike-share data). Since Bangalore
-has no public real-time bike-share API, this version pairs live **air quality**
+project structure. Since Bangalore has no public real-time bike-share API, this version pairs live **air quality**
 data with live **weather** data — the same "real-time stations + weather,
 merged and analyzed" shape, applied to a genuinely available Bangalore data source.
 
@@ -40,8 +39,7 @@ python fetch_data.py               # runs continuously, fetches every 30 min
 python fetch_data.py --interval 15 # custom interval
 ```
 Leave it running for a few days (e.g. on a spare machine, a Raspberry Pi, or a
-free-tier cloud VM) to build up a real time-series, the same way the original
-project collected Dublin data over Dec 24-31.
+free-tier cloud VM) to build up a real time-series.
 
 ## ⚠️ About the seed data
 `data/aqi_stations.csv` and `data/weather.csv` ship with **synthetically
