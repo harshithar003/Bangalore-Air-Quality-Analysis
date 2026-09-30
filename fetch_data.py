@@ -152,9 +152,6 @@ def fetch_weather(lat=BANGALORE_LAT, lon=BANGALORE_LON, token=OWM_TOKEN):
         "weather_desc": (payload.get("weather") or [{}])[0].get("description"),
     }
 
-
-# --- Persistence ----------------------------------------------------------
-
 def append_rows(rows, out_path):
     if not rows:
         return
@@ -178,9 +175,6 @@ def run_once():
         print(f"  Weather: {weather_row['weather_desc']}, {weather_row['temperature_c']}C -> {WEATHER_OUT}")
     except Exception as error:
         print(f"  Weather fetch failed: {error}")
-
-
-# --- Entry point ------------------------------------------------------------
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Collect Bangalore AQI + weather data.")
